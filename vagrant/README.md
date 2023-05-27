@@ -62,7 +62,7 @@ Use the attached file named Vagrantfile
 ### Create VM:
 * Open git-bash or terminal and execute:
 ```
-cd testvm
+
 vagrant up
 ```
 
