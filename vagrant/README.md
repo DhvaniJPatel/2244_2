@@ -89,3 +89,27 @@ For any operation, first go to specific VM folder in `Git-Bash` and then try fol
 - To reprovision and reload a VM, execute `vagrant reload --provision`
 
 - To SSH/login into the VM, execute `vagrant ssh`
+
+git status = shows the statusof git repository
+
+git push = push the code to remote
+
+- git pull
+
+- git add
+
+- git commit -m 'your msg'
+
+- ### hoe to commit and push
+
+- git checkout -b <branch-name>
+
+-git add . (if u want add all file)
+
+or git add <file-name>
+
+- git commit -m <commit msg>
+
+- git push -u origin <branch-name>  (for first time push for a new branch)
+
+- git push (for old branch)
