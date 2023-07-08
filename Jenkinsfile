@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Parallel Stage') {
             when {
-                branch 'main'
+                branch 'Jenkinsfile'
             }
             failFast true
             parallel {
