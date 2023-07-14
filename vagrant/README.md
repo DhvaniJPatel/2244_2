@@ -113,3 +113,29 @@ or git add <file-name>
 - git push -u origin <branch-name>  (for first time push for a new branch)
 
 - git push (for old branch)
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo dnf upgrade
+# Add required dependencies for the jenkins package
+sudo dnf install java-11-openjdk
+sudo dnf install jenkins
+sudo systemctl daemon-reload
+
+jenkins user
+ssh into VM
+sudo su
+su - jenkins
+
+Create keys: ssh-keygen -t ed25519 -C "footbar@example.com"
+Keys will be into this directory: /var/lib/jenkins/.ssh/
+
+
+
+* create credentials to store key
+Dashboard
+Manage Jenkins
+Credentials
+System
+Global credentials (unrestricted)
